@@ -41,7 +41,7 @@ def replace_word(data, english_word, hebrew_word):
 	return data
 
 def main():
-	with open('mario_bros.nes', 'rb') as fd:
+	with open('mario_bros_original_string.nes', 'rb') as fd:
 		data = fd.read()
 
 	data = replace_word(data, b'1 PLAYER GAME A', b'AJEI TJS NAJE T')
@@ -67,7 +67,7 @@ def main():
 	data = replace_word(data, b'TEST YOUR SKILL', b'CJI TQ HFUKQL')
 	data = replace_word(data, b'LUIGI', b'KTHDH') # Note that we wrote here לואיגי without all the characters.
 
-	with open('mario_bros.modified.nes', 'wb') as fd:
+	with open('mario_bros_hebrew.nes', 'wb') as fd:
 		fd.write(data)
 
 if __name__ == '__main__':
