@@ -1,4 +1,4 @@
-This will be mario bros in hebrew.
+This will be mario bros in hebrew
 just wait a minute.
 
 utils used to create this mode:
